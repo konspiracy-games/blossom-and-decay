@@ -33,20 +33,13 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**System used****
- - OS: [e.g. iOS]
+**System used**
+ - Device/OS: (e.g. iOS)
     http://whatsmyos.com
- - Browser [e.g. chrome, safari]
+ - Browser (e.g. chrome, safari)
     https://www.whatismybrowser.com
  - Hardware (CPU, RAM, Graphics Card)     
     http://www.wikihow.com/Check-Computer-Specifications
-
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
 
 **Additional context**
 Add any other context about the problem here, like extra information like current FPS or bandwidth if relevant to bug.
