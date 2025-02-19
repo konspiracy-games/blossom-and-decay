@@ -1,0 +1,95 @@
+name: Feedback or Feature Request  
+description: Suggest an idea or give us feedback. Thank you for helping us improve B&D.
+title: "[Feedback]: "
+labels: ["feedback"]
+projects: ["swonn/1"]
+body:
+  - type: markdown
+    attributes:
+      value: "Have a look if similar feedback has already been submitted; please avoid duplicates.
+      
+      Before starting a report, please make sure to follow our [Community Guidelines](https://konspiracy.de/community_gudelines.html)."
+  - type: dropdown
+    id: userType
+    attributes:
+      label: User Type
+      options:
+        - Tester
+        - GL
+        - GM
+        - CM
+        - Dev
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: playerID
+    attributes:
+      label: PlayerID 
+      description: What is your PlayerID ?
+      placeholder: "e.g. 18"
+    validations:
+      required: true
+  - type: textarea
+    id: categories
+    attributes:
+      label: Categories
+      description: Delete the categories that don't apply or add new ones at the end.
+      placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
+      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, progression/economy, map, items..."
+    validations:
+      required: true
+  - type: textarea
+    id: problemrelated
+    attributes:
+      label: Is your feedback related to a problem?
+      description: (if applicable) Recount you experience and observations.
+      placeholder: "e.g. what feels wrong and/or doesn't work properly? when did you first noticed this? how can we observe it?"
+  - type: textarea
+    id: ideaMain
+    attributes:
+      label: Main Idea
+      description: Describe you core idea as concise as possible (max. 2 paragraphs).
+      placeholder: "e.g. what/when should something happen? the crafting system could use an extended…"
+    validations:
+      required: true
+  - type: textarea
+    id: ideaContext
+    attributes:
+      label: Idea reasoning/context
+      description: Clear and concise arguments that expand on the relevance and applicability of your idea.
+      placeholder: "e.g. why is this improvement relevant? what gameplay aspects would be improved? what need are you addressing? how would this unfold in our multiplayer world? how would this affect the offlineAI?"
+    validations:
+      required: true
+  - type: textarea
+    id: ideaSolution
+    attributes:
+      label: Idea solution
+      description: (if applicable) Describe the solution you've ideated. 
+      placeholder: "e.g. how would it work (expected behavior)? what would be improved? why/when is it an improvement? are the outlined needs sufficiently addressed?"
+  - type: textarea
+    id: ideaAlter
+    attributes:
+      label: Solution alternatives
+      description: Describe any alternative solutions you've considered around this topic.
+      placeholder: |
+        (if applicable) what solution could work in a similar way? what would be the down-/up-sides? why is your proposed idea preferable?
+        if multiple solutions, please enumerate e.g.
+        1.
+        2.
+        3.
+        …
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description:  More info/context about your idea, suggestions, or screenshots (if available).
+      placeholder: "What else should we know about this topic?"
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Community Guidelines
+      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our Community Policies or [ToS](https://konspiracy.de/terms_of_service.html).
+      options:
+        - label: Yes, I do
+          required: true
