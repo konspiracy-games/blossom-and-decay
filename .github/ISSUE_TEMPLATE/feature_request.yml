@@ -2,7 +2,7 @@ name: Feedback or Feature Request
 description: Suggest an idea or give us feedback. Thank you for helping us improve B&D.
 title: "[Feedback]: "
 labels: ["feedback"]
-projects: ["swonn/1"]
+projects: ["konspiracy-games/1"]
 body:
   - type: markdown
     attributes:
