@@ -2,7 +2,7 @@ name: Report a Bug
 description: this will take a few minutes, so thank you. 
 title: "[Bug]: "
 labels: ["bug"]
-projects: ["swonn/1"]
+projects: ["konspiracy-games/1 "]
 body:
   - type: markdown
     attributes:
