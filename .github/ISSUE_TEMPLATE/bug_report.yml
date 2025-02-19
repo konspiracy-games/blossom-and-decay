@@ -1,0 +1,122 @@
+name: Report a Bug
+description: this will take a few minutes, so thank you. 
+title: "[Bug]: "
+labels: ["bug"]
+projects: ["swonn/1"]
+body:
+  - type: markdown
+    attributes:
+      value: "Have a look if the same bug is already reported, avoid duplicates.
+      
+      Before starting a report, please make sure to follow our [Community Guidelines](https://konspiracy.de/community_gudelines.html)."
+  - type: dropdown
+    id: userType
+    attributes:
+      label: User Type
+      options:
+        - Tester
+        - GL
+        - GM
+        - CM
+        - Dev
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: playerID
+    attributes:
+      label: PlayerID 
+      description: What is your PlayerID ?
+      placeholder: "e.g. 18"
+    validations:
+      required: true
+  - type: input
+    id: bugTime
+    attributes:
+      label: Time when you noticed this
+      description: "use this Format: YYYY.DD.MM_HH:MM_UTC+HH:MM"
+      placeholder: "YYYY.DD.MM_HH:MM_UTC+HH:MM"
+    validations:
+      required: true
+  - type: textarea
+    id: categories
+    attributes:
+      label: Categories
+      description: Delete the categories that don't apply or add new ones at the end.
+      placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
+      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, map, items..."
+    validations:
+      required: true
+  - type: textarea
+    id: bugDescripton
+    attributes:
+      label: Bug description 
+      description: A clear and concise description of the behavior you experienced. Also if you found errors in the console logs, please add them.
+      placeholder: |
+        what happened, what did you do, what gear did you use, were you fighting/using any controls while the bug occurred?
+        If applicable/necessary, add screenshots to help explain the issue.
+    validations:
+      required: true
+  - type: dropdown
+    id: bugImportant
+    attributes:
+      label: Is this a critical Bug ?
+      description: A critical bug can be an exploit or crash the server. If yes, please label it CRITICAL, we'll get in contact with you ASAP.
+      options:
+        - "No"
+        - "Yes"
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: toReproduce
+    attributes:
+      label: Bug Reproduction
+      description: If this is a critical Bug don't fill this. If it's not, try to reproduce the bug. What situation causes the bug exactly ?
+      placeholder: |
+        Please write a step by step protocol to reproduce the behavior that causes the bug e.g. 
+        1. go to...
+        2. click/scroll on....
+        3. open....
+        4. then the bug happens when…
+  - type: textarea
+    id: playerExpected
+    attributes:
+      label: Expected behavior
+      placeholder: "A clear and concise description of what you expected to happen."
+  - type: input
+    id: palyerOS
+    attributes:
+      label: Operating System and Device Type
+      description: "[https://www.whatismybrowser.com/](https://explore.whatismybrowser.com/useragents/parse/?analyse-my-user-agent=yes#parse-useragent)"
+      placeholder: "e.g. Windows NT 10.0 Win64 x64, Intel Mac OS X 14.6"
+    validations:
+      required: true
+  - type: input
+    id: playerBrowser
+    attributes:
+      label: Browser Version and Plugins    
+      placeholder: "e.g. Mozilla/5.0, Chrome/128.0.0.0, Firefox/130.0"
+    validations:
+      required: true
+  - type: input
+    id: playerHardware
+    attributes:
+      label: Hardware
+      placeholder: "e.g. CPU, RAM, and Graphics Card"
+    validations:
+      required: true      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the issue, or suggestions (if available).
+      placeholder: "e.g. extra information like current FPS, or bandwidth if relevant to the bug."
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Community Guidelines
+      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our Community Policies or [ToS](https://konspiracy.de/terms_of_service.html).
+      options:
+        - label: Yes, I do
+          required: true
