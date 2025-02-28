@@ -1,5 +1,5 @@
 # Bug Reporting for Blossom &amp; Decay
-Here we also gather Feedback and Feature Requests.
+Here we also gather requests for new features and player feedback. 
 [CLICK HERE](https://github.com/konspiracy-games/blossom-and-decay/issues/new/choose) to create a report.
 
 Before starting a report, please make sure to:
