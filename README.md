@@ -1,5 +1,5 @@
-# blossom-and-decay
-System/Interface for Feedback and Bug Reporting for Blossom &amp; Decay
+# Bug Reporting for Blossom &amp; Decay
+we also gather Game Feedback and Feature Requests 
 
 [Here](https://github.com/konspiracy-games/blossom-and-decay/issues/new/choose) you can report bugs or give feedback on the game.
 
