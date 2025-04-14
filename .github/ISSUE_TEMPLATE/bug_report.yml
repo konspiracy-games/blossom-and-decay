@@ -8,7 +8,7 @@ body:
     attributes:
       value: "Have a look if the same bug is already reported, avoid duplicates.
       
-      Before starting a report, please make sure to follow our [Community Guidelines](https://konspiracy.de/community_gudelines.html)."
+      Before starting a report, please make sure to follow our [Community Guidelines](https://konspiracy.de/community_guidelines.html)."
   - type: dropdown
     id: userType
     attributes:
