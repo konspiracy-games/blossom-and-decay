@@ -1,12 +1,12 @@
 name: Feedback or Feature Request  
-description: Suggest an idea or give us feedback. Thank you for helping us improve B&D.
-title: "[Feedback]: "
-labels: ["feedback"]
+description: Suggest an idea or request a specific Feature. Thank you for helping us improve BaD.
+title: "[Feature]: "
+labels: ["feature"]
 projects: ["konspiracy-games/1"]
 body:
   - type: markdown
     attributes:
-      value: "Have a look if similar feedback has already been submitted; please avoid duplicates.
+      value: "Have a look if [similar features have already been requested](https://github.com/konspiracy-games/blossom-and-decay/issues), please avoid duplicates.
       
       Before starting a report, please make sure to follow our [Community Guidelines](https://konspiracy.de/community_guidelines.html)."
   - type: dropdown
@@ -36,13 +36,13 @@ body:
       label: Categories
       description: Delete the categories that don't apply or add new ones at the end.
       placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
-      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, progression/economy, map, items..."
+      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, progression/economy, world/map, territory, buildings, items..."
     validations:
       required: true
   - type: textarea
     id: problemrelated
     attributes:
-      label: Is your feedback related to a problem?
+      label: Is your idea related to a problem?
       description: (if applicable) Recount you experience and observations.
       placeholder: "e.g. what feels wrong and/or doesn't work properly? when did you first noticed this? how can we observe it?"
   - type: textarea
@@ -50,7 +50,7 @@ body:
     attributes:
       label: Main Idea
       description: Describe you core idea as concise as possible (max. 2 paragraphs).
-      placeholder: "e.g. what/when should something happen? the crafting system could use an extended…"
+      placeholder: "e.g. e.g. what is it about? what need are you addressing? what would be its pros and cons? "
     validations:
       required: true
   - type: textarea
@@ -58,7 +58,7 @@ body:
     attributes:
       label: Idea reasoning/context
       description: Clear and concise arguments that expand on the relevance and applicability of your idea.
-      placeholder: "e.g. why is this improvement relevant? what gameplay aspects would be improved? what need are you addressing? how would this unfold in our multiplayer world? how would this affect the offlineAI?"
+      placeholder: "e.g. why is this idea relevant? how does your idea improve gameplay? how would this unfold in our multiplayer world? how would this affect the offline AIs?"
     validations:
       required: true
   - type: textarea
@@ -66,7 +66,7 @@ body:
     attributes:
       label: Idea solution
       description: (if applicable) Describe the solution you've ideated. 
-      placeholder: "e.g. how would it work (expected behavior)? what would be improved? why/when is it an improvement? are the outlined needs sufficiently addressed?"
+      placeholder: "e.g. how would it work? which gameplay aspects would be improved? how would these affect other game mechanics? are the outlined needs sufficiently addressed?"
   - type: textarea
     id: ideaAlter
     attributes:
