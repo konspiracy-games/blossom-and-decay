@@ -6,7 +6,7 @@ projects: ["konspiracy-games/1 "]
 body:
   - type: markdown
     attributes:
-      value: "Have a look if the same bug is already reported, avoid duplicates.
+      value: "Have a look if [the same bug is already reported](https://github.com/konspiracy-games/blossom-and-decay/issues), avoid duplicates.
       
       Before starting a report, please make sure to follow our [Community Guidelines](https://konspiracy.de/community_guidelines.html)."
   - type: dropdown
@@ -44,7 +44,7 @@ body:
       label: Categories
       description: Delete the categories that don't apply or add new ones at the end.
       placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
-      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, map, items..."
+      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, world/map, territory, buildings, items..."
     validations:
       required: true
   - type: textarea
