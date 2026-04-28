@@ -6,7 +6,7 @@ projects: ["konspiracy-games/1 "]
 body:
   - type: markdown
     attributes:
-      value: "Have a look if [the same bug is already reported](https://github.com/konspiracy-games/blossom-and-decay/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug%2Cduplicate), avoid duplicates.
+      value: "Have a look if [the same bug is already reported](https://github.com/konspiracy-games/blossom-and-decay/issues?q=is%3Aissue%20label%3Abug%2Cduplicate), avoid duplicates.
       
       Before starting a report, please make sure to follow our [Community Guidelines](https://konspiracy.de/community_guidelines.html)."
   - type: dropdown
