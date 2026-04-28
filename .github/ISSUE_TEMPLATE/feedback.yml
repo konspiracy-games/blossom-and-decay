@@ -1,5 +1,5 @@
 name: Feedback  
-description: Propose an idea, thank you for helping us improve BaD.
+description: Share your thoughts to improve B&D's gameplay
 title: "[Feedback]: "
 labels: ["feedback"]
 projects: ["konspiracy-games/1"]
@@ -30,7 +30,7 @@ body:
       placeholder: "e.g. 18"
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: categories
     attributes:
       label: Categories
