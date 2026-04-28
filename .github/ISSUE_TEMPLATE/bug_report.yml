@@ -38,7 +38,7 @@ body:
       placeholder: "YYYY.DD.MM_HH:MM_UTC+HH:MM"
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: categories
     attributes:
       label: Categories
