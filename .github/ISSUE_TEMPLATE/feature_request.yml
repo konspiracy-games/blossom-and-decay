@@ -36,7 +36,7 @@ body:
       label: Categories
       description: Delete the categories that don't apply or add new ones at the end.
       placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
-      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, progression/economy, world/map, territory, buildings, items..."
+      value: "world/map, balancing, offline play, UI, interaction, login, community, chat, tutorial, crafting/tasks, combat, character, gear, monsters/animals, map objects, items, territory, buildings, profile, settings..."
     validations:
       required: true
   - type: textarea
@@ -89,7 +89,7 @@ body:
     id: terms
     attributes:
       label: Community Guidelines
-      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our Community Policies or [ToS](https://konspiracy.de/terms_of_service.html).
+      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our community policies or [Terms of Service](https://konspiracy.de/terms_of_service.html).
       options:
         - label: Yes, I do
           required: true
