@@ -44,7 +44,7 @@ body:
       label: Categories
       description: Delete the categories that don't apply or add new ones at the end.
       placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
-      value: "UI, community/chat, combat, balancing, tasks/crafting, offline play, monsters/animals, character, gear, profile, settings, tutorial, world/map, territory, buildings, items..."
+      value: "world/map, balancing, offline play, UI, interaction, login, community, chat, tutorial, crafting/tasks, combat, character, gear, monsters/animals, map objects, items, territory, buildings, profile, settings..."
     validations:
       required: true
   - type: textarea
@@ -53,8 +53,9 @@ body:
       label: Bug description 
       description: A clear and concise description of the behavior you experienced. Also if you found errors in the console logs, please add them.
       placeholder: |
-        what happened, what did you do, what gear did you use, were you fighting/using any controls while the bug occurred?
-        If applicable/necessary, add screenshots to help explain the issue.
+        What happened when the bug occurred?, what were you doing?, what was your context? (place, gear, ui), were you fighting/using any controls?
+        - Check the console and paste here the relevant errors you find there. 
+        - If applicable/necessary, add screenshots to help explain the issue.
     validations:
       required: true
   - type: dropdown
@@ -118,7 +119,7 @@ body:
     id: terms
     attributes:
       label: Community Guidelines
-      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our Community Policies or [ToS](https://konspiracy.de/terms_of_service.html).
+      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our community policies or [Terms of Service](https://konspiracy.de/terms_of_service.html).
       options:
         - label: Yes, I do
           required: true
