@@ -99,7 +99,7 @@ body:
     attributes:
       label: Terms
       description: "By submitting this bug report, you agree to allow the processing of your data by GitHub and our technical team for analysis and troubleshooting purposes in accordance with our [Privacy Policy](https://konspiracy.de/privacy_policy.html).
-      
+      \n
       Also you confirm you are abiding by our [terms](https://konspiracy.de/terms_of_service.html) and the information provided is accurate and factual."
       options:
         - label: Yes, I do
