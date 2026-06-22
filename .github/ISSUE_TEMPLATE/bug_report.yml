@@ -1,5 +1,5 @@
 name: Report a Bug
-description: this will take a few minutes, so thank you. 
+description: this will take a few minutes, so thank you.
 title: "[Bug]: "
 labels: ["bug"]
 projects: ["konspiracy-games/1 "]
@@ -7,34 +7,13 @@ body:
   - type: markdown
     attributes:
       value: "Have a look if [the same bug is already reported](https://github.com/konspiracy-games/blossom-and-decay/issues?q=is%3Aissue%20label%3Abug%2Cduplicate), avoid duplicates.
-      
+
       Before starting a report, please make sure to follow our [Reporting Guidelines](https://konspiracy.de/community_guidelines.html#Bug_Reports)."
-  - type: dropdown
-    id: userType
-    attributes:
-      label: User Type
-      options:
-        - Tester
-        - GL
-        - GM
-        - CM
-        - Dev
-      default: 0
-    validations:
-      required: true
-  - type: input
-    id: playerID
-    attributes:
-      label: PlayerID 
-      description: What is your PlayerID ?
-      placeholder: "e.g. 18"
-    validations:
-      required: true
   - type: input
     id: bugTime
     attributes:
       label: Time when you noticed this
-      description: "use this Format: YYYY.DD.MM_HH:MM_UTC+HH:MM"
+      description: "YYYY.DD.MM_HH:MM_UTC+HH:MM"
       placeholder: "YYYY.DD.MM_HH:MM_UTC+HH:MM"
     validations:
       required: true
@@ -42,19 +21,19 @@ body:
     id: categories
     attributes:
       label: Categories
-      description: Delete the categories that don't apply or add new ones at the end.
-      placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
-      value: "world/map, balancing, offline play, UI, interaction, login, community, chat, tutorial, crafting/tasks, combat, character, gear, monsters/animals, map objects, items, territory, buildings, profile, settings..."
+      description: Delete the categories that don't apply and/or add new ones at the end.
+      placeholder: "If none of the categories was applicable, please write at least an applicable category."
+      value: "world/map, balancing, offline play, UI, interaction, login, community, chat, tutorial, crafting/tasks, combat, character, gear, monsters/animals, map objects, items, territory, buildings, profile, settings, duping..."
     validations:
       required: true
   - type: textarea
     id: bugDescripton
     attributes:
-      label: Bug description 
+      label: Bug description
       description: A clear and concise description of the behavior you experienced. Also if you found errors in the console logs, please add them.
       placeholder: |
-        What happened when the bug occurred?, what were you doing?, what was your context? (place, gear, ui), were you fighting/using any controls?
-        - Check the console and paste here the relevant errors you find there. 
+        What happened when the bug occurred? what were you doing? what was your context? (place, gear, ui), were you fighting/using any controls?
+        - Check the console and paste here the relevant errors you find there.
         - If applicable/necessary, add screenshots to help explain the issue.
     validations:
       required: true
@@ -75,12 +54,12 @@ body:
       label: Bug Reproduction
       description: If this is a critical Bug don't fill this. If it's not, try to reproduce the bug. What situation causes the bug exactly ?
       placeholder: |
-        Please write a step by step protocol to reproduce the behavior that causes the bug e.g. 
+        Please write a step by step protocol to reproduce the behavior that causes the bug e.g.
         1. go to...
         2. click/scroll on....
         3. open....
         4. then the bug happens when…
-  - type: textarea
+  - type: input
     id: playerExpected
     attributes:
       label: Expected behavior
@@ -96,7 +75,7 @@ body:
   - type: input
     id: playerBrowser
     attributes:
-      label: Browser Version and Plugins    
+      label: Browser Version and Plugins
       description: "User Agent, Plugin "
       placeholder: "e.g. Mozilla/5.0 Gecko/20100101 Firefox/91.0"
     validations:
@@ -108,7 +87,7 @@ body:
       description: "CPU, RAM, GPU"
       placeholder: "e.g. AMD Ryzen 7 7800X3D, 64GB, Radeon RX 7600"
     validations:
-      required: true      
+      required: true
   - type: textarea
     id: additional
     attributes:
@@ -118,8 +97,9 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Community Guidelines
-      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our community policies or [Terms of Service](https://konspiracy.de/terms_of_service.html).
+      label: Terms
+      description: "By submitting this bug report, you agree to allow the processing of your data by GitHub and our technical team for analysis and troubleshooting purposes in accordance with our [Privacy Policy](https://konspiracy.de/privacy_policy.html).
+      Also you confirm you are abiding by our [terms](https://konspiracy.de/terms_of_service.html) and the information provided is accurate and factual."
       options:
         - label: Yes, I do
           required: true
