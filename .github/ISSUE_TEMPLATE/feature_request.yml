@@ -1,4 +1,4 @@
-name: Feature Request  
+name: Feature Request
 description: Propose a feature to improve B&D's gameplay.
 title: "[Feature]: "
 labels: ["feature"]
@@ -7,36 +7,15 @@ body:
   - type: markdown
     attributes:
       value: "Have a look if [similar features have already been requested](https://github.com/konspiracy-games/blossom-and-decay/issues?q=is%3Aissue%20label%3Afeature%2Cfeedback), please avoid duplicates.
-      
+
       Before starting a report, please make sure to follow our [Reporting Guidelines](https://konspiracy.de/community_guidelines.html#Bug_Reports)."
-  - type: dropdown
-    id: userType
-    attributes:
-      label: User Type
-      options:
-        - Tester
-        - GL
-        - GM
-        - CM
-        - Dev
-      default: 0
-    validations:
-      required: true
-  - type: input
-    id: playerID
-    attributes:
-      label: PlayerID 
-      description: What is your PlayerID ?
-      placeholder: "e.g. 18"
-    validations:
-      required: true
   - type: input
     id: categories
     attributes:
       label: Categories
       description: Delete the categories that don't apply or add new ones at the end.
       placeholder: "If none of the categories was applicable, please write at least an applicable category for this bug."
-      value: "world/map, balancing, offline play, UI, interaction, login, community, chat, tutorial, crafting/tasks, combat, character, gear, monsters/animals, map objects, items, territory, buildings, profile, settings..."
+      value: "world/map, balancing, offline play, UI, interaction, login, community, chat, tutorial, crafting/tasks, combat, character, gear, monsters/animals, map objects, items, territory, buildings, profile, settings.."
     validations:
       required: true
   - type: textarea
@@ -62,12 +41,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: ideaSolution
-    attributes:
-      label: Idea solution
-      description: (if applicable) Describe the solution you've ideated. 
-      placeholder: "e.g. how would it work? which gameplay aspects would be improved? how would these affect other game mechanics? are the outlined needs sufficiently addressed?"
-  - type: textarea
     id: ideaAlter
     attributes:
       label: Solution alternatives
@@ -88,8 +61,8 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Community Guidelines
-      description: You confirm that all the information you are providing is accurate and factual, that you are abiding by our [Community Guidelines](https://konspiracy.de/community_gudelines.html), have read and understood the terms, and are not breaching our community policies or [Terms of Service](https://konspiracy.de/terms_of_service.html).
+      label: Terms
+      description: "By submitting this bug report, you agree to allow the processing of your data by GitHub and our technical team for analysis and troubleshooting purposes in accordance with our [Privacy Policy](https://konspiracy.de/privacy_policy.html).\nAlso you confirm you are abiding by our [terms](https://konspiracy.de/terms_of_service.html) and the information provided is accurate and factual."
       options:
         - label: Yes, I do
           required: true
