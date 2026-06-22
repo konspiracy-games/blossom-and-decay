@@ -41,12 +41,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: ideaSolution
-    attributes:
-      label: Idea solution
-      description: (if applicable) Describe the solution you've ideated. 
-      placeholder: "e.g. how would it work? which gameplay aspects would be improved? how would these affect other game mechanics? are the outlined needs sufficiently addressed?"
-  - type: textarea
     id: ideaAlter
     attributes:
       label: Solution alternatives
